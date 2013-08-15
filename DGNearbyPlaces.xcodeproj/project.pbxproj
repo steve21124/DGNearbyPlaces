@@ -1,0 +1,469 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F6173AE117BD9F46009FF930 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6173AE017BD9F46009FF930 /* UIKit.framework */; };
+		F6173AE317BD9F46009FF930 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6173AE217BD9F46009FF930 /* Foundation.framework */; };
+		F6173AE517BD9F46009FF930 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6173AE417BD9F46009FF930 /* CoreGraphics.framework */; };
+		F6173AEB17BD9F46009FF930 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F6173AE917BD9F46009FF930 /* InfoPlist.strings */; };
+		F6173AED17BD9F46009FF930 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F6173AEC17BD9F46009FF930 /* main.m */; };
+		F6173AF117BD9F46009FF930 /* DGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F6173AF017BD9F46009FF930 /* DGAppDelegate.m */; };
+		F6173AF317BD9F46009FF930 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = F6173AF217BD9F46009FF930 /* Default.png */; };
+		F6173AF517BD9F46009FF930 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6173AF417BD9F46009FF930 /* Default@2x.png */; };
+		F6173AF717BD9F46009FF930 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6173AF617BD9F46009FF930 /* Default-568h@2x.png */; };
+		F6173AFA17BD9F46009FF930 /* DGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6173AF917BD9F46009FF930 /* DGViewController.m */; };
+		F6173AFD17BD9F46009FF930 /* DGViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6173AFB17BD9F46009FF930 /* DGViewController.xib */; };
+		F6173B0517BD9F46009FF930 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6173B0417BD9F46009FF930 /* SenTestingKit.framework */; };
+		F6173B0617BD9F46009FF930 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6173AE017BD9F46009FF930 /* UIKit.framework */; };
+		F6173B0717BD9F46009FF930 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6173AE217BD9F46009FF930 /* Foundation.framework */; };
+		F6173B0F17BD9F46009FF930 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F6173B0D17BD9F46009FF930 /* InfoPlist.strings */; };
+		F6173B1217BD9F46009FF930 /* DGNearbyPlacesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F6173B1117BD9F46009FF930 /* DGNearbyPlacesTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F6173B0817BD9F46009FF930 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6173AD517BD9F46009FF930 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6173ADC17BD9F46009FF930;
+			remoteInfo = DGNearbyPlaces;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F6173ADD17BD9F46009FF930 /* DGNearbyPlaces.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DGNearbyPlaces.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6173AE017BD9F46009FF930 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F6173AE217BD9F46009FF930 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F6173AE417BD9F46009FF930 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F6173AE817BD9F46009FF930 /* DGNearbyPlaces-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DGNearbyPlaces-Info.plist"; sourceTree = "<group>"; };
+		F6173AEA17BD9F46009FF930 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F6173AEC17BD9F46009FF930 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F6173AEE17BD9F46009FF930 /* DGNearbyPlaces-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DGNearbyPlaces-Prefix.pch"; sourceTree = "<group>"; };
+		F6173AEF17BD9F46009FF930 /* DGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DGAppDelegate.h; sourceTree = "<group>"; };
+		F6173AF017BD9F46009FF930 /* DGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DGAppDelegate.m; sourceTree = "<group>"; };
+		F6173AF217BD9F46009FF930 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		F6173AF417BD9F46009FF930 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		F6173AF617BD9F46009FF930 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		F6173AF817BD9F46009FF930 /* DGViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DGViewController.h; sourceTree = "<group>"; };
+		F6173AF917BD9F46009FF930 /* DGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DGViewController.m; sourceTree = "<group>"; };
+		F6173AFC17BD9F46009FF930 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DGViewController.xib; sourceTree = "<group>"; };
+		F6173B0317BD9F46009FF930 /* DGNearbyPlacesTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DGNearbyPlacesTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6173B0417BD9F46009FF930 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		F6173B0C17BD9F46009FF930 /* DGNearbyPlacesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DGNearbyPlacesTests-Info.plist"; sourceTree = "<group>"; };
+		F6173B0E17BD9F46009FF930 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F6173B1017BD9F46009FF930 /* DGNearbyPlacesTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DGNearbyPlacesTests.h; sourceTree = "<group>"; };
+		F6173B1117BD9F46009FF930 /* DGNearbyPlacesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DGNearbyPlacesTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F6173ADA17BD9F46009FF930 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6173AE117BD9F46009FF930 /* UIKit.framework in Frameworks */,
+				F6173AE317BD9F46009FF930 /* Foundation.framework in Frameworks */,
+				F6173AE517BD9F46009FF930 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6173AFF17BD9F46009FF930 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6173B0517BD9F46009FF930 /* SenTestingKit.framework in Frameworks */,
+				F6173B0617BD9F46009FF930 /* UIKit.framework in Frameworks */,
+				F6173B0717BD9F46009FF930 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F6173AD417BD9F46009FF930 = {
+			isa = PBXGroup;
+			children = (
+				F6173AE617BD9F46009FF930 /* DGNearbyPlaces */,
+				F6173B0A17BD9F46009FF930 /* DGNearbyPlacesTests */,
+				F6173ADF17BD9F46009FF930 /* Frameworks */,
+				F6173ADE17BD9F46009FF930 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F6173ADE17BD9F46009FF930 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F6173ADD17BD9F46009FF930 /* DGNearbyPlaces.app */,
+				F6173B0317BD9F46009FF930 /* DGNearbyPlacesTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F6173ADF17BD9F46009FF930 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F6173AE017BD9F46009FF930 /* UIKit.framework */,
+				F6173AE217BD9F46009FF930 /* Foundation.framework */,
+				F6173AE417BD9F46009FF930 /* CoreGraphics.framework */,
+				F6173B0417BD9F46009FF930 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F6173AE617BD9F46009FF930 /* DGNearbyPlaces */ = {
+			isa = PBXGroup;
+			children = (
+				F6173AEF17BD9F46009FF930 /* DGAppDelegate.h */,
+				F6173AF017BD9F46009FF930 /* DGAppDelegate.m */,
+				F6173AF817BD9F46009FF930 /* DGViewController.h */,
+				F6173AF917BD9F46009FF930 /* DGViewController.m */,
+				F6173AFB17BD9F46009FF930 /* DGViewController.xib */,
+				F6173AE717BD9F46009FF930 /* Supporting Files */,
+			);
+			path = DGNearbyPlaces;
+			sourceTree = "<group>";
+		};
+		F6173AE717BD9F46009FF930 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F6173AE817BD9F46009FF930 /* DGNearbyPlaces-Info.plist */,
+				F6173AE917BD9F46009FF930 /* InfoPlist.strings */,
+				F6173AEC17BD9F46009FF930 /* main.m */,
+				F6173AEE17BD9F46009FF930 /* DGNearbyPlaces-Prefix.pch */,
+				F6173AF217BD9F46009FF930 /* Default.png */,
+				F6173AF417BD9F46009FF930 /* Default@2x.png */,
+				F6173AF617BD9F46009FF930 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F6173B0A17BD9F46009FF930 /* DGNearbyPlacesTests */ = {
+			isa = PBXGroup;
+			children = (
+				F6173B1017BD9F46009FF930 /* DGNearbyPlacesTests.h */,
+				F6173B1117BD9F46009FF930 /* DGNearbyPlacesTests.m */,
+				F6173B0B17BD9F46009FF930 /* Supporting Files */,
+			);
+			path = DGNearbyPlacesTests;
+			sourceTree = "<group>";
+		};
+		F6173B0B17BD9F46009FF930 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F6173B0C17BD9F46009FF930 /* DGNearbyPlacesTests-Info.plist */,
+				F6173B0D17BD9F46009FF930 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F6173ADC17BD9F46009FF930 /* DGNearbyPlaces */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6173B1517BD9F46009FF930 /* Build configuration list for PBXNativeTarget "DGNearbyPlaces" */;
+			buildPhases = (
+				F6173AD917BD9F46009FF930 /* Sources */,
+				F6173ADA17BD9F46009FF930 /* Frameworks */,
+				F6173ADB17BD9F46009FF930 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DGNearbyPlaces;
+			productName = DGNearbyPlaces;
+			productReference = F6173ADD17BD9F46009FF930 /* DGNearbyPlaces.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F6173B0217BD9F46009FF930 /* DGNearbyPlacesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6173B1817BD9F46009FF930 /* Build configuration list for PBXNativeTarget "DGNearbyPlacesTests" */;
+			buildPhases = (
+				F6173AFE17BD9F46009FF930 /* Sources */,
+				F6173AFF17BD9F46009FF930 /* Frameworks */,
+				F6173B0017BD9F46009FF930 /* Resources */,
+				F6173B0117BD9F46009FF930 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F6173B0917BD9F46009FF930 /* PBXTargetDependency */,
+			);
+			name = DGNearbyPlacesTests;
+			productName = DGNearbyPlacesTests;
+			productReference = F6173B0317BD9F46009FF930 /* DGNearbyPlacesTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F6173AD517BD9F46009FF930 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = DG;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = dg;
+			};
+			buildConfigurationList = F6173AD817BD9F46009FF930 /* Build configuration list for PBXProject "DGNearbyPlaces" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F6173AD417BD9F46009FF930;
+			productRefGroup = F6173ADE17BD9F46009FF930 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F6173ADC17BD9F46009FF930 /* DGNearbyPlaces */,
+				F6173B0217BD9F46009FF930 /* DGNearbyPlacesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F6173ADB17BD9F46009FF930 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6173AEB17BD9F46009FF930 /* InfoPlist.strings in Resources */,
+				F6173AF317BD9F46009FF930 /* Default.png in Resources */,
+				F6173AF517BD9F46009FF930 /* Default@2x.png in Resources */,
+				F6173AF717BD9F46009FF930 /* Default-568h@2x.png in Resources */,
+				F6173AFD17BD9F46009FF930 /* DGViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6173B0017BD9F46009FF930 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6173B0F17BD9F46009FF930 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F6173B0117BD9F46009FF930 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F6173AD917BD9F46009FF930 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6173AED17BD9F46009FF930 /* main.m in Sources */,
+				F6173AF117BD9F46009FF930 /* DGAppDelegate.m in Sources */,
+				F6173AFA17BD9F46009FF930 /* DGViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6173AFE17BD9F46009FF930 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6173B1217BD9F46009FF930 /* DGNearbyPlacesTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F6173B0917BD9F46009FF930 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F6173ADC17BD9F46009FF930 /* DGNearbyPlaces */;
+			targetProxy = F6173B0817BD9F46009FF930 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F6173AE917BD9F46009FF930 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6173AEA17BD9F46009FF930 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F6173AFB17BD9F46009FF930 /* DGViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6173AFC17BD9F46009FF930 /* en */,
+			);
+			name = DGViewController.xib;
+			sourceTree = "<group>";
+		};
+		F6173B0D17BD9F46009FF930 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6173B0E17BD9F46009FF930 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F6173B1317BD9F46009FF930 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F6173B1417BD9F46009FF930 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F6173B1617BD9F46009FF930 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DGNearbyPlaces/DGNearbyPlaces-Prefix.pch";
+				INFOPLIST_FILE = "DGNearbyPlaces/DGNearbyPlaces-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F6173B1717BD9F46009FF930 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DGNearbyPlaces/DGNearbyPlaces-Prefix.pch";
+				INFOPLIST_FILE = "DGNearbyPlaces/DGNearbyPlaces-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F6173B1917BD9F46009FF930 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DGNearbyPlaces.app/DGNearbyPlaces";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DGNearbyPlaces/DGNearbyPlaces-Prefix.pch";
+				INFOPLIST_FILE = "DGNearbyPlacesTests/DGNearbyPlacesTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		F6173B1A17BD9F46009FF930 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DGNearbyPlaces.app/DGNearbyPlaces";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DGNearbyPlaces/DGNearbyPlaces-Prefix.pch";
+				INFOPLIST_FILE = "DGNearbyPlacesTests/DGNearbyPlacesTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F6173AD817BD9F46009FF930 /* Build configuration list for PBXProject "DGNearbyPlaces" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6173B1317BD9F46009FF930 /* Debug */,
+				F6173B1417BD9F46009FF930 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6173B1517BD9F46009FF930 /* Build configuration list for PBXNativeTarget "DGNearbyPlaces" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6173B1617BD9F46009FF930 /* Debug */,
+				F6173B1717BD9F46009FF930 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F6173B1817BD9F46009FF930 /* Build configuration list for PBXNativeTarget "DGNearbyPlacesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6173B1917BD9F46009FF930 /* Debug */,
+				F6173B1A17BD9F46009FF930 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F6173AD517BD9F46009FF930 /* Project object */;
+}
