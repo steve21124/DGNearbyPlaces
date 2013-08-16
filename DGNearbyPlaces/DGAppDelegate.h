@@ -8,12 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@class DGViewController;
+@class DGNearbyPlacesListController;
 
 @interface DGAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (strong, nonatomic) DGViewController *viewController;
+@property (strong, nonatomic) DGNearbyPlacesListController *nearbyPlacesController;
+
+@property (strong, nonatomic) UINavigationController* navController;
 
 @end

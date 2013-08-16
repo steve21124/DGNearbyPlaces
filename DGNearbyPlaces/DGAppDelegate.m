@@ -8,16 +8,20 @@
 
 #import "DGAppDelegate.h"
 
-#import "DGViewController.h"
+#import "DGNearbyPlacesListController.h"
+#import <AFNetworking.h>
 
 @implementation DGAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [AFNetworkActivityIndicatorManager sharedManager].enabled = YES;
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.viewController = [[DGViewController alloc] initWithNibName:@"DGViewController" bundle:nil];
-    self.window.rootViewController = self.viewController;
+    self.nearbyPlacesController = [[DGNearbyPlacesListController alloc] initWithNibName:@"DGNearbyPlacesListController" bundle:nil];
+    self.navController = [[UINavigationController alloc] initWithRootViewController:self.nearbyPlacesController];
+    self.window.rootViewController = self.navController;
     [self.window makeKeyAndVisible];
     return YES;
 }

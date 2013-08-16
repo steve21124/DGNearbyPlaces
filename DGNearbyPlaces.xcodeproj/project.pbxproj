@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D16DB31AC4044015B745DF0A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09D1A14D010740EB81FB40AE /* libPods.a */; };
 		F6173AE117BD9F46009FF930 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6173AE017BD9F46009FF930 /* UIKit.framework */; };
 		F6173AE317BD9F46009FF930 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6173AE217BD9F46009FF930 /* Foundation.framework */; };
 		F6173AE517BD9F46009FF930 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6173AE417BD9F46009FF930 /* CoreGraphics.framework */; };
@@ -16,13 +17,20 @@
 		F6173AF317BD9F46009FF930 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = F6173AF217BD9F46009FF930 /* Default.png */; };
 		F6173AF517BD9F46009FF930 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6173AF417BD9F46009FF930 /* Default@2x.png */; };
 		F6173AF717BD9F46009FF930 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6173AF617BD9F46009FF930 /* Default-568h@2x.png */; };
-		F6173AFA17BD9F46009FF930 /* DGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6173AF917BD9F46009FF930 /* DGViewController.m */; };
-		F6173AFD17BD9F46009FF930 /* DGViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6173AFB17BD9F46009FF930 /* DGViewController.xib */; };
 		F6173B0517BD9F46009FF930 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6173B0417BD9F46009FF930 /* SenTestingKit.framework */; };
 		F6173B0617BD9F46009FF930 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6173AE017BD9F46009FF930 /* UIKit.framework */; };
 		F6173B0717BD9F46009FF930 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6173AE217BD9F46009FF930 /* Foundation.framework */; };
 		F6173B0F17BD9F46009FF930 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F6173B0D17BD9F46009FF930 /* InfoPlist.strings */; };
 		F6173B1217BD9F46009FF930 /* DGNearbyPlacesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F6173B1117BD9F46009FF930 /* DGNearbyPlacesTests.m */; };
+		F6B6AF0C17BDA03100389056 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6B6AF0B17BDA03100389056 /* CoreLocation.framework */; };
+		F6B6AF1017BDA07C00389056 /* DGNearbyPlacesListController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B6AF0E17BDA07C00389056 /* DGNearbyPlacesListController.m */; };
+		F6B6AF1117BDA07C00389056 /* DGNearbyPlacesListController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6B6AF0F17BDA07C00389056 /* DGNearbyPlacesListController.xib */; };
+		F6B6AF1717BDA41200389056 /* DGPlacesAPIJSONClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B6AF1617BDA41200389056 /* DGPlacesAPIJSONClient.m */; };
+		F6B6AF1917BDB10600389056 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6B6AF1817BDB10600389056 /* SystemConfiguration.framework */; };
+		F6B6AF1B17BDB12D00389056 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6B6AF1A17BDB12D00389056 /* MobileCoreServices.framework */; };
+		F6B6AF1E17BDB99000389056 /* DGPlace.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B6AF1D17BDB99000389056 /* DGPlace.m */; };
+		F6B6AF2117BDEFFB00389056 /* geocode-71.png in Resources */ = {isa = PBXBuildFile; fileRef = F6B6AF2017BDEFFB00389056 /* geocode-71.png */; };
+		F6B6AF2417BDF57B00389056 /* DGPlacesAPIImageClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B6AF2317BDF57B00389056 /* DGPlacesAPIImageClient.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09D1A14D010740EB81FB40AE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA92D64400F8451983E6254B /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		F6173ADD17BD9F46009FF930 /* DGNearbyPlaces.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DGNearbyPlaces.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6173AE017BD9F46009FF930 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F6173AE217BD9F46009FF930 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -49,15 +59,25 @@
 		F6173AF217BD9F46009FF930 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		F6173AF417BD9F46009FF930 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		F6173AF617BD9F46009FF930 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		F6173AF817BD9F46009FF930 /* DGViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DGViewController.h; sourceTree = "<group>"; };
-		F6173AF917BD9F46009FF930 /* DGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DGViewController.m; sourceTree = "<group>"; };
-		F6173AFC17BD9F46009FF930 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DGViewController.xib; sourceTree = "<group>"; };
 		F6173B0317BD9F46009FF930 /* DGNearbyPlacesTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DGNearbyPlacesTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6173B0417BD9F46009FF930 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		F6173B0C17BD9F46009FF930 /* DGNearbyPlacesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DGNearbyPlacesTests-Info.plist"; sourceTree = "<group>"; };
 		F6173B0E17BD9F46009FF930 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F6173B1017BD9F46009FF930 /* DGNearbyPlacesTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DGNearbyPlacesTests.h; sourceTree = "<group>"; };
 		F6173B1117BD9F46009FF930 /* DGNearbyPlacesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DGNearbyPlacesTests.m; sourceTree = "<group>"; };
+		F6B6AF0B17BDA03100389056 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		F6B6AF0D17BDA07C00389056 /* DGNearbyPlacesListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGNearbyPlacesListController.h; sourceTree = "<group>"; };
+		F6B6AF0E17BDA07C00389056 /* DGNearbyPlacesListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGNearbyPlacesListController.m; sourceTree = "<group>"; };
+		F6B6AF0F17BDA07C00389056 /* DGNearbyPlacesListController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DGNearbyPlacesListController.xib; sourceTree = "<group>"; };
+		F6B6AF1517BDA41200389056 /* DGPlacesAPIJSONClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGPlacesAPIJSONClient.h; sourceTree = "<group>"; };
+		F6B6AF1617BDA41200389056 /* DGPlacesAPIJSONClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGPlacesAPIJSONClient.m; sourceTree = "<group>"; };
+		F6B6AF1817BDB10600389056 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F6B6AF1A17BDB12D00389056 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		F6B6AF1C17BDB99000389056 /* DGPlace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGPlace.h; sourceTree = "<group>"; };
+		F6B6AF1D17BDB99000389056 /* DGPlace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGPlace.m; sourceTree = "<group>"; };
+		F6B6AF2017BDEFFB00389056 /* geocode-71.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "geocode-71.png"; sourceTree = "<group>"; };
+		F6B6AF2217BDF57B00389056 /* DGPlacesAPIImageClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGPlacesAPIImageClient.h; sourceTree = "<group>"; };
+		F6B6AF2317BDF57B00389056 /* DGPlacesAPIImageClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGPlacesAPIImageClient.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,9 +85,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6B6AF1B17BDB12D00389056 /* MobileCoreServices.framework in Frameworks */,
+				F6B6AF1917BDB10600389056 /* SystemConfiguration.framework in Frameworks */,
+				F6B6AF0C17BDA03100389056 /* CoreLocation.framework in Frameworks */,
 				F6173AE117BD9F46009FF930 /* UIKit.framework in Frameworks */,
 				F6173AE317BD9F46009FF930 /* Foundation.framework in Frameworks */,
 				F6173AE517BD9F46009FF930 /* CoreGraphics.framework in Frameworks */,
+				D16DB31AC4044015B745DF0A /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,10 +111,14 @@
 		F6173AD417BD9F46009FF930 = {
 			isa = PBXGroup;
 			children = (
+				F6B6AF1A17BDB12D00389056 /* MobileCoreServices.framework */,
+				F6B6AF1817BDB10600389056 /* SystemConfiguration.framework */,
+				F6B6AF0B17BDA03100389056 /* CoreLocation.framework */,
 				F6173AE617BD9F46009FF930 /* DGNearbyPlaces */,
 				F6173B0A17BD9F46009FF930 /* DGNearbyPlacesTests */,
 				F6173ADF17BD9F46009FF930 /* Frameworks */,
 				F6173ADE17BD9F46009FF930 /* Products */,
+				BA92D64400F8451983E6254B /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +138,7 @@
 				F6173AE217BD9F46009FF930 /* Foundation.framework */,
 				F6173AE417BD9F46009FF930 /* CoreGraphics.framework */,
 				F6173B0417BD9F46009FF930 /* SenTestingKit.framework */,
+				09D1A14D010740EB81FB40AE /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -119,9 +148,16 @@
 			children = (
 				F6173AEF17BD9F46009FF930 /* DGAppDelegate.h */,
 				F6173AF017BD9F46009FF930 /* DGAppDelegate.m */,
-				F6173AF817BD9F46009FF930 /* DGViewController.h */,
-				F6173AF917BD9F46009FF930 /* DGViewController.m */,
-				F6173AFB17BD9F46009FF930 /* DGViewController.xib */,
+				F6B6AF0D17BDA07C00389056 /* DGNearbyPlacesListController.h */,
+				F6B6AF0E17BDA07C00389056 /* DGNearbyPlacesListController.m */,
+				F6B6AF0F17BDA07C00389056 /* DGNearbyPlacesListController.xib */,
+				F6B6AF1517BDA41200389056 /* DGPlacesAPIJSONClient.h */,
+				F6B6AF1617BDA41200389056 /* DGPlacesAPIJSONClient.m */,
+				F6B6AF2217BDF57B00389056 /* DGPlacesAPIImageClient.h */,
+				F6B6AF2317BDF57B00389056 /* DGPlacesAPIImageClient.m */,
+				F6B6AF1C17BDB99000389056 /* DGPlace.h */,
+				F6B6AF1D17BDB99000389056 /* DGPlace.m */,
+				F6B6AF1F17BDEFFB00389056 /* assets */,
 				F6173AE717BD9F46009FF930 /* Supporting Files */,
 			);
 			path = DGNearbyPlaces;
@@ -160,6 +196,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		F6B6AF1F17BDEFFB00389056 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				F6B6AF2017BDEFFB00389056 /* geocode-71.png */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -167,9 +211,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F6173B1517BD9F46009FF930 /* Build configuration list for PBXNativeTarget "DGNearbyPlaces" */;
 			buildPhases = (
+				5705EF73B7994CA28CB77DFC /* Check Pods Manifest.lock */,
 				F6173AD917BD9F46009FF930 /* Sources */,
 				F6173ADA17BD9F46009FF930 /* Frameworks */,
 				F6173ADB17BD9F46009FF930 /* Resources */,
+				A6985C9441CD4DA29691BF72 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -236,7 +282,8 @@
 				F6173AF317BD9F46009FF930 /* Default.png in Resources */,
 				F6173AF517BD9F46009FF930 /* Default@2x.png in Resources */,
 				F6173AF717BD9F46009FF930 /* Default-568h@2x.png in Resources */,
-				F6173AFD17BD9F46009FF930 /* DGViewController.xib in Resources */,
+				F6B6AF1117BDA07C00389056 /* DGNearbyPlacesListController.xib in Resources */,
+				F6B6AF2117BDEFFB00389056 /* geocode-71.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +298,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		5705EF73B7994CA28CB77DFC /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A6985C9441CD4DA29691BF72 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		F6173B0117BD9F46009FF930 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -273,7 +350,10 @@
 			files = (
 				F6173AED17BD9F46009FF930 /* main.m in Sources */,
 				F6173AF117BD9F46009FF930 /* DGAppDelegate.m in Sources */,
-				F6173AFA17BD9F46009FF930 /* DGViewController.m in Sources */,
+				F6B6AF1017BDA07C00389056 /* DGNearbyPlacesListController.m in Sources */,
+				F6B6AF1717BDA41200389056 /* DGPlacesAPIJSONClient.m in Sources */,
+				F6B6AF1E17BDB99000389056 /* DGPlace.m in Sources */,
+				F6B6AF2417BDF57B00389056 /* DGPlacesAPIImageClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,14 +382,6 @@
 				F6173AEA17BD9F46009FF930 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		F6173AFB17BD9F46009FF930 /* DGViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F6173AFC17BD9F46009FF930 /* en */,
-			);
-			name = DGViewController.xib;
 			sourceTree = "<group>";
 		};
 		F6173B0D17BD9F46009FF930 /* InfoPlist.strings */ = {
@@ -348,7 +420,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -372,7 +444,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -381,10 +453,12 @@
 		};
 		F6173B1617BD9F46009FF930 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA92D64400F8451983E6254B /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DGNearbyPlaces/DGNearbyPlaces-Prefix.pch";
 				INFOPLIST_FILE = "DGNearbyPlaces/DGNearbyPlaces-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -392,10 +466,12 @@
 		};
 		F6173B1717BD9F46009FF930 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA92D64400F8451983E6254B /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DGNearbyPlaces/DGNearbyPlaces-Prefix.pch";
 				INFOPLIST_FILE = "DGNearbyPlaces/DGNearbyPlaces-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -454,6 +530,7 @@
 				F6173B1717BD9F46009FF930 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F6173B1817BD9F46009FF930 /* Build configuration list for PBXNativeTarget "DGNearbyPlacesTests" */ = {
 			isa = XCConfigurationList;
@@ -462,6 +539,7 @@
 				F6173B1A17BD9F46009FF930 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
