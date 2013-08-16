@@ -59,6 +59,19 @@ NSString* const kPlacesBaseURLString = @"https://maps.googleapis.com/maps/api/pl
     AFJSONRequestOperation* operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:request success:^(NSURLRequest *request, NSHTTPURLResponse*response, id JSON) {
         NSMutableArray* places = [NSMutableArray array];
         
+        NSString* status = [JSON valueForKeyPath:@"status"];
+        
+        if (status && [status isEqualToString:@"OVER_QUERY_LIMIT"])
+        {
+            NSMutableDictionary *errorDetail = [NSMutableDictionary dictionary];
+            [errorDetail setValue:@"Exceeded Google Places API Limit for today." forKey:NSLocalizedDescriptionKey];
+            
+            if (failure)
+            {
+                return failure(request,response,[NSError errorWithDomain:@"dg" code:100 userInfo:errorDetail],JSON);
+            }
+        }
+        
         NSString* nextPageToken = [JSON valueForKeyPath:@"next_page_token"];
         
         for (NSDictionary* result in [JSON valueForKeyPath:@"results"])

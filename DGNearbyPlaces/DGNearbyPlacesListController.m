@@ -34,7 +34,9 @@
     return self;
 }
 
-- (void)viewDidLoad
+#pragma mark UIViewController lifecycle methods
+
+- (void) viewDidLoad
 {
     [super viewDidLoad];
     
@@ -45,12 +47,6 @@
     UITapGestureRecognizer *gestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hideKeyboard)];
     [self.view addGestureRecognizer:gestureRecognizer];
     gestureRecognizer.cancelsTouchesInView = NO;
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 #pragma mark - Table view data source
