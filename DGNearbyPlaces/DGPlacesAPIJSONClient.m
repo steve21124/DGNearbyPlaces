@@ -12,7 +12,7 @@
 #import "DGPlace.h"
 #import "DGPlacesAPIImageClient.h"
 
-NSString* const kPlacesAPIKey = @"AIzaSyAgkxr8L20pp3DP24DH8kZQdE1BVjKkrPs";
+NSString* const kPlacesAPIKey = @"AIzaSyDz8iW_zaFs18YaIUy9w_iVdSCwdV79UP8";
 NSString* const kPlacesBaseURLString = @"https://maps.googleapis.com/maps/api/place/";
 
 @implementation DGPlacesAPIJSONClient
@@ -91,7 +91,7 @@ NSString* const kPlacesBaseURLString = @"https://maps.googleapis.com/maps/api/pl
                     NSDictionary* photo = [photos objectAtIndex:0];
                     NSString* photoReference = [photo valueForKeyPath:@"photo_reference"];
                     
-                    [[DGPlacesAPIImageClient sharedClient] requestPhotoForPhotoRef:photoReference maxHeight:100 maxWidth:100 success:^(UIImage *photo) {
+                    [[DGPlacesAPIImageClient sharedClient] requestPhotoForPhotoRef:photoReference maxHeight:80 maxWidth:80 success:^(UIImage *photo) {
                         place.image = photo;
                     } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error) {
                         if (failure)
