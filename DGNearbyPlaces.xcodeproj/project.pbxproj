@@ -30,7 +30,6 @@
 		F6B6AF1B17BDB12D00389056 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6B6AF1A17BDB12D00389056 /* MobileCoreServices.framework */; };
 		F6B6AF1E17BDB99000389056 /* DGPlace.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B6AF1D17BDB99000389056 /* DGPlace.m */; };
 		F6B6AF2117BDEFFB00389056 /* geocode-71.png in Resources */ = {isa = PBXBuildFile; fileRef = F6B6AF2017BDEFFB00389056 /* geocode-71.png */; };
-		F6B6AF2417BDF57B00389056 /* DGPlacesAPIImageClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B6AF2317BDF57B00389056 /* DGPlacesAPIImageClient.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,8 +75,6 @@
 		F6B6AF1C17BDB99000389056 /* DGPlace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGPlace.h; sourceTree = "<group>"; };
 		F6B6AF1D17BDB99000389056 /* DGPlace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGPlace.m; sourceTree = "<group>"; };
 		F6B6AF2017BDEFFB00389056 /* geocode-71.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "geocode-71.png"; sourceTree = "<group>"; };
-		F6B6AF2217BDF57B00389056 /* DGPlacesAPIImageClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGPlacesAPIImageClient.h; sourceTree = "<group>"; };
-		F6B6AF2317BDF57B00389056 /* DGPlacesAPIImageClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGPlacesAPIImageClient.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,8 +150,6 @@
 				F6B6AF0F17BDA07C00389056 /* DGNearbyPlacesListController.xib */,
 				F6B6AF1517BDA41200389056 /* DGPlacesAPIJSONClient.h */,
 				F6B6AF1617BDA41200389056 /* DGPlacesAPIJSONClient.m */,
-				F6B6AF2217BDF57B00389056 /* DGPlacesAPIImageClient.h */,
-				F6B6AF2317BDF57B00389056 /* DGPlacesAPIImageClient.m */,
 				F6B6AF1C17BDB99000389056 /* DGPlace.h */,
 				F6B6AF1D17BDB99000389056 /* DGPlace.m */,
 				F6B6AF1F17BDEFFB00389056 /* assets */,
@@ -353,7 +348,6 @@
 				F6B6AF1017BDA07C00389056 /* DGNearbyPlacesListController.m in Sources */,
 				F6B6AF1717BDA41200389056 /* DGPlacesAPIJSONClient.m in Sources */,
 				F6B6AF1E17BDB99000389056 /* DGPlace.m in Sources */,
-				F6B6AF2417BDF57B00389056 /* DGPlacesAPIImageClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

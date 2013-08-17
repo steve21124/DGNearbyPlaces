@@ -22,4 +22,10 @@ extern NSString* const kPlacesBaseURLString;
                   success:(void (^)(NSArray* places, NSString* nextPageToken))success
                   failure:(void (^)(NSURLRequest* request, NSHTTPURLResponse* response, NSError* error, id JSON))failure;
 
+- (void)requestPhotoForPhotoRef:(NSString*)photoRef
+                      maxHeight:(NSInteger)maxHeightPx
+                       maxWidth:(NSInteger)maxWidthPx
+                        success:(void (^)(UIImage* photo))success
+                        failure:(void (^)(NSURLRequest* request, NSHTTPURLResponse* response, NSError* error))failure;
+
 @end

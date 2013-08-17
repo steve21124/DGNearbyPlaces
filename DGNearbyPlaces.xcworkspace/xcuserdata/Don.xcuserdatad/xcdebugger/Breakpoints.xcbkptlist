@@ -73,11 +73,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "DGNearbyPlaces/DGPlacesAPIImageClient.m"
-         timestampString = "398336227.653068"
+         timestampString = "398462190.620413"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "60"
-         endingLineNumber = "60"
+         startingLineNumber = "56"
+         endingLineNumber = "56"
          landmarkName = "-requestPhotoForPhotoRef:maxHeight:maxWidth:success:failure:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -86,11 +86,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "DGNearbyPlaces/DGPlacesAPIImageClient.m"
-         timestampString = "398329293.17796"
+         timestampString = "398462190.620413"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "50"
-         endingLineNumber = "50"
+         startingLineNumber = "46"
+         endingLineNumber = "46"
          landmarkName = "-requestPhotoForPhotoRef:maxHeight:maxWidth:success:failure:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -99,11 +99,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "DGNearbyPlaces/DGNearbyPlacesListController.m"
-         timestampString = "398460180.990414"
+         timestampString = "398462563.601532"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "100"
-         endingLineNumber = "100"
+         startingLineNumber = "90"
+         endingLineNumber = "90"
          landmarkName = "-tableView:willDisplayCell:forRowAtIndexPath:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -112,11 +112,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "DGNearbyPlaces/DGNearbyPlacesListController.m"
-         timestampString = "398460180.990414"
+         timestampString = "398462566.008555"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "115"
-         endingLineNumber = "115"
+         startingLineNumber = "105"
+         endingLineNumber = "105"
          landmarkName = "-tableView:willDisplayCell:forRowAtIndexPath:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -125,11 +125,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "DGNearbyPlaces/DGPlacesAPIJSONClient.m"
-         timestampString = "398340499.480816"
+         timestampString = "398462413.606996"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "68"
-         endingLineNumber = "68"
+         startingLineNumber = "67"
+         endingLineNumber = "67"
          landmarkName = "-requestPlacesNear:withRadius:pageToken:success:failure:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -157,6 +157,58 @@
          startingLineNumber = "124"
          endingLineNumber = "124"
          landmarkName = "-locationManager:didUpdateToLocation:fromLocation:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "DGNearbyPlaces/DGNearbyPlacesListController.m"
+         timestampString = "398462620.744369"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "163"
+         endingLineNumber = "163"
+         landmarkName = "-searchNearby:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "DGNearbyPlaces/DGNearbyPlacesListController.m"
+         timestampString = "398462622.868688"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "167"
+         endingLineNumber = "167"
+         landmarkName = "-searchNearby:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "DGNearbyPlaces/DGNearbyPlacesListController.m"
+         timestampString = "398462683.053337"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "93"
+         endingLineNumber = "93"
+         landmarkName = "-tableView:willDisplayCell:forRowAtIndexPath:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "DGNearbyPlaces/DGNearbyPlacesListController.m"
+         timestampString = "398462685.085181"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "97"
+         endingLineNumber = "97"
+         landmarkName = "-tableView:willDisplayCell:forRowAtIndexPath:"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

@@ -10,7 +10,6 @@
 #import <AFJSONRequestOperation.h>
 #import <AFImageRequestOperation.h>
 #import "DGPlace.h"
-#import "DGPlacesAPIImageClient.h"
 
 NSString* const kPlacesAPIKey = @"AIzaSyDz8iW_zaFs18YaIUy9w_iVdSCwdV79UP8";
 NSString* const kPlacesBaseURLString = @"https://maps.googleapis.com/maps/api/place/";
@@ -91,7 +90,7 @@ NSString* const kPlacesBaseURLString = @"https://maps.googleapis.com/maps/api/pl
                     NSDictionary* photo = [photos objectAtIndex:0];
                     NSString* photoReference = [photo valueForKeyPath:@"photo_reference"];
                     
-                    [[DGPlacesAPIImageClient sharedClient] requestPhotoForPhotoRef:photoReference maxHeight:80 maxWidth:80 success:^(UIImage *photo) {
+                    [self requestPhotoForPhotoRef:photoReference maxHeight:80 maxWidth:80 success:^(UIImage *photo) {
                         place.image = photo;
                     } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error) {
                         if (failure)
@@ -114,6 +113,31 @@ NSString* const kPlacesBaseURLString = @"https://maps.googleapis.com/maps/api/pl
         if (failure)
         {
             failure(request,response,error,JSON);
+        }
+    }];
+    
+    [operation start];
+}
+
+- (void)requestPhotoForPhotoRef:(NSString*)photoRef
+                      maxHeight:(NSInteger)maxHeightPx
+                       maxWidth:(NSInteger)maxWidthPx
+                        success:(void (^)(UIImage* photo))success
+                        failure:(void (^)(NSURLRequest* request, NSHTTPURLResponse* response, NSError* error))failure
+{
+    NSString* path = [NSString stringWithFormat:@"photo?maxwidth=%d&maxheight=%d&photoreference=%@&sensor=true&key=%@", maxWidthPx, maxHeightPx, photoRef, kPlacesAPIKey];
+    
+    NSURLRequest* request = [self requestWithMethod:@"GET" path:path parameters:nil];
+    
+    AFImageRequestOperation *operation = [AFImageRequestOperation imageRequestOperationWithRequest:request imageProcessingBlock:nil success:^(NSURLRequest *request, NSHTTPURLResponse *response, UIImage *image) {
+        if (success)
+        {
+            return success(image);
+        }
+    } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error) {
+        if (failure)
+        {
+            return failure(request, response, error);
         }
     }];
     
