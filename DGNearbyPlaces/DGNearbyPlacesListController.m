@@ -28,8 +28,8 @@
         self.locationManager = [[CLLocationManager alloc] init];
         self.locationManager.delegate = self;
         [self.locationManager setDesiredAccuracy:kCLLocationAccuracyHundredMeters];
-        self.locationFound = NO;
         self.searchRadius = 500;
+        self.locationFound = NO;
     }
     return self;
 }
@@ -119,10 +119,11 @@
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation
 {
+    self.currentLocation = newLocation;
+
     if (!self.locationFound)
     {
-        self.currentLocation = newLocation;
-        
+        // location found for the first time now, do initial places request
         [[DGPlacesAPIJSONClient sharedClient] requestPlacesNear:self.currentLocation withRadius:self.searchRadius pageToken:nil success:^(NSArray* places, NSString* nextPageToken) {
             self.nearbyPlaces = [NSMutableArray arrayWithArray:places];
             self.nextPageToken = nextPageToken;
@@ -130,8 +131,9 @@
         } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON) {
             [self handleError:error];
         }];
-        self.locationFound = YES;
     }
+    
+    self.locationFound = YES;
 }
 
 - (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error
@@ -156,8 +158,14 @@
 - (IBAction)searchNearby:(id)sender
 {
     [self.radiusTextField resignFirstResponder];
-    self.locationFound = NO;
-    [self.locationManager startUpdatingLocation];
+    
+    [[DGPlacesAPIJSONClient sharedClient] requestPlacesNear:self.currentLocation withRadius:self.searchRadius pageToken:nil success:^(NSArray* places, NSString* nextPageToken) {
+        self.nearbyPlaces = [NSMutableArray arrayWithArray:places];
+        self.nextPageToken = nextPageToken;
+        [self.nearbyPlacesTableView reloadData];
+    } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON) {
+        [self handleError:error];
+    }];
 }
 
 #pragma mark - Error handling
