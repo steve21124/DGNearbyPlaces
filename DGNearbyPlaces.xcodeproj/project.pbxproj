@@ -26,13 +26,13 @@
 		F6173B0F17BD9F46009FF930 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F6173B0D17BD9F46009FF930 /* InfoPlist.strings */; };
 		F6173B1217BD9F46009FF930 /* DGNearbyPlacesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F6173B1117BD9F46009FF930 /* DGNearbyPlacesTests.m */; };
 		F6B6AF0C17BDA03100389056 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6B6AF0B17BDA03100389056 /* CoreLocation.framework */; };
-		F6B6AF1017BDA07C00389056 /* DGNearbyPlacesListController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B6AF0E17BDA07C00389056 /* DGNearbyPlacesListController.m */; };
-		F6B6AF1117BDA07C00389056 /* DGNearbyPlacesListController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6B6AF0F17BDA07C00389056 /* DGNearbyPlacesListController.xib */; };
-		F6B6AF1717BDA41200389056 /* DGPlacesAPIJSONClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B6AF1617BDA41200389056 /* DGPlacesAPIJSONClient.m */; };
 		F6B6AF1917BDB10600389056 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6B6AF1817BDB10600389056 /* SystemConfiguration.framework */; };
 		F6B6AF1B17BDB12D00389056 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6B6AF1A17BDB12D00389056 /* MobileCoreServices.framework */; };
-		F6B6AF1E17BDB99000389056 /* DGPlace.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B6AF1D17BDB99000389056 /* DGPlace.m */; };
-		F6B6AF2117BDEFFB00389056 /* geocode-71.png in Resources */ = {isa = PBXBuildFile; fileRef = F6B6AF2017BDEFFB00389056 /* geocode-71.png */; };
+		F6C34C4B17C1A6E10035B84B /* DGNearbyPlacesListController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C34C4917C1A6E10035B84B /* DGNearbyPlacesListController.m */; };
+		F6C34C4C17C1A6E10035B84B /* DGNearbyPlacesListController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6C34C4A17C1A6E10035B84B /* DGNearbyPlacesListController.xib */; };
+		F6C34C4F17C1A7060035B84B /* default_place_photo.png in Resources */ = {isa = PBXBuildFile; fileRef = F6C34C4E17C1A7060035B84B /* default_place_photo.png */; };
+		F6C34C5717C1A76D0035B84B /* DGPlacesAPIJSONClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C34C5617C1A76D0035B84B /* DGPlacesAPIJSONClient.m */; };
+		F6C34C5B17C1AFA40035B84B /* DGPlace.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C34C5A17C1AFA40035B84B /* DGPlace.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,16 +68,16 @@
 		F6173B1017BD9F46009FF930 /* DGNearbyPlacesTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DGNearbyPlacesTests.h; sourceTree = "<group>"; };
 		F6173B1117BD9F46009FF930 /* DGNearbyPlacesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DGNearbyPlacesTests.m; sourceTree = "<group>"; };
 		F6B6AF0B17BDA03100389056 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		F6B6AF0D17BDA07C00389056 /* DGNearbyPlacesListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGNearbyPlacesListController.h; sourceTree = "<group>"; };
-		F6B6AF0E17BDA07C00389056 /* DGNearbyPlacesListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGNearbyPlacesListController.m; sourceTree = "<group>"; };
-		F6B6AF0F17BDA07C00389056 /* DGNearbyPlacesListController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DGNearbyPlacesListController.xib; sourceTree = "<group>"; };
-		F6B6AF1517BDA41200389056 /* DGPlacesAPIJSONClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGPlacesAPIJSONClient.h; sourceTree = "<group>"; };
-		F6B6AF1617BDA41200389056 /* DGPlacesAPIJSONClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGPlacesAPIJSONClient.m; sourceTree = "<group>"; };
 		F6B6AF1817BDB10600389056 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		F6B6AF1A17BDB12D00389056 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
-		F6B6AF1C17BDB99000389056 /* DGPlace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGPlace.h; sourceTree = "<group>"; };
-		F6B6AF1D17BDB99000389056 /* DGPlace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGPlace.m; sourceTree = "<group>"; };
-		F6B6AF2017BDEFFB00389056 /* geocode-71.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "geocode-71.png"; sourceTree = "<group>"; };
+		F6C34C4817C1A6E10035B84B /* DGNearbyPlacesListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGNearbyPlacesListController.h; sourceTree = "<group>"; };
+		F6C34C4917C1A6E10035B84B /* DGNearbyPlacesListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGNearbyPlacesListController.m; sourceTree = "<group>"; };
+		F6C34C4A17C1A6E10035B84B /* DGNearbyPlacesListController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DGNearbyPlacesListController.xib; sourceTree = "<group>"; };
+		F6C34C4E17C1A7060035B84B /* default_place_photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default_place_photo.png; sourceTree = "<group>"; };
+		F6C34C5517C1A76D0035B84B /* DGPlacesAPIJSONClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGPlacesAPIJSONClient.h; sourceTree = "<group>"; };
+		F6C34C5617C1A76D0035B84B /* DGPlacesAPIJSONClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGPlacesAPIJSONClient.m; sourceTree = "<group>"; };
+		F6C34C5917C1AFA40035B84B /* DGPlace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGPlace.h; sourceTree = "<group>"; };
+		F6C34C5A17C1AFA40035B84B /* DGPlace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGPlace.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,14 +151,10 @@
 			children = (
 				F6173AEF17BD9F46009FF930 /* DGAppDelegate.h */,
 				F6173AF017BD9F46009FF930 /* DGAppDelegate.m */,
-				F6B6AF0D17BDA07C00389056 /* DGNearbyPlacesListController.h */,
-				F6B6AF0E17BDA07C00389056 /* DGNearbyPlacesListController.m */,
-				F6B6AF0F17BDA07C00389056 /* DGNearbyPlacesListController.xib */,
-				F6B6AF1517BDA41200389056 /* DGPlacesAPIJSONClient.h */,
-				F6B6AF1617BDA41200389056 /* DGPlacesAPIJSONClient.m */,
-				F6B6AF1C17BDB99000389056 /* DGPlace.h */,
-				F6B6AF1D17BDB99000389056 /* DGPlace.m */,
-				F6B6AF1F17BDEFFB00389056 /* assets */,
+				F6C34C4717C1A6E10035B84B /* ViewControllers */,
+				F6C34C5417C1A76D0035B84B /* Service */,
+				F6C34C5817C1AFA40035B84B /* DataTransferObjects */,
+				F6C34C4D17C1A7060035B84B /* Assets */,
 				F6173AE717BD9F46009FF930 /* Supporting Files */,
 			);
 			path = DGNearbyPlaces;
@@ -197,12 +193,40 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		F6B6AF1F17BDEFFB00389056 /* assets */ = {
+		F6C34C4717C1A6E10035B84B /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				F6B6AF2017BDEFFB00389056 /* geocode-71.png */,
+				F6C34C4817C1A6E10035B84B /* DGNearbyPlacesListController.h */,
+				F6C34C4917C1A6E10035B84B /* DGNearbyPlacesListController.m */,
+				F6C34C4A17C1A6E10035B84B /* DGNearbyPlacesListController.xib */,
 			);
-			path = assets;
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F6C34C4D17C1A7060035B84B /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				F6C34C4E17C1A7060035B84B /* default_place_photo.png */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		F6C34C5417C1A76D0035B84B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				F6C34C5517C1A76D0035B84B /* DGPlacesAPIJSONClient.h */,
+				F6C34C5617C1A76D0035B84B /* DGPlacesAPIJSONClient.m */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		F6C34C5817C1AFA40035B84B /* DataTransferObjects */ = {
+			isa = PBXGroup;
+			children = (
+				F6C34C5917C1AFA40035B84B /* DGPlace.h */,
+				F6C34C5A17C1AFA40035B84B /* DGPlace.m */,
+			);
+			path = DataTransferObjects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,8 +307,8 @@
 				F6173AF317BD9F46009FF930 /* Default.png in Resources */,
 				F6173AF517BD9F46009FF930 /* Default@2x.png in Resources */,
 				F6173AF717BD9F46009FF930 /* Default-568h@2x.png in Resources */,
-				F6B6AF1117BDA07C00389056 /* DGNearbyPlacesListController.xib in Resources */,
-				F6B6AF2117BDEFFB00389056 /* geocode-71.png in Resources */,
+				F6C34C4C17C1A6E10035B84B /* DGNearbyPlacesListController.xib in Resources */,
+				F6C34C4F17C1A7060035B84B /* default_place_photo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,9 +375,9 @@
 			files = (
 				F6173AED17BD9F46009FF930 /* main.m in Sources */,
 				F6173AF117BD9F46009FF930 /* DGAppDelegate.m in Sources */,
-				F6B6AF1017BDA07C00389056 /* DGNearbyPlacesListController.m in Sources */,
-				F6B6AF1717BDA41200389056 /* DGPlacesAPIJSONClient.m in Sources */,
-				F6B6AF1E17BDB99000389056 /* DGPlace.m in Sources */,
+				F6C34C4B17C1A6E10035B84B /* DGNearbyPlacesListController.m in Sources */,
+				F6C34C5717C1A76D0035B84B /* DGPlacesAPIJSONClient.m in Sources */,
+				F6C34C5B17C1AFA40035B84B /* DGPlace.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
