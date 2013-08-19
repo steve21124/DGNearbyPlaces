@@ -17,9 +17,6 @@
 		F6173AEB17BD9F46009FF930 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F6173AE917BD9F46009FF930 /* InfoPlist.strings */; };
 		F6173AED17BD9F46009FF930 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F6173AEC17BD9F46009FF930 /* main.m */; };
 		F6173AF117BD9F46009FF930 /* DGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F6173AF017BD9F46009FF930 /* DGAppDelegate.m */; };
-		F6173AF317BD9F46009FF930 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = F6173AF217BD9F46009FF930 /* Default.png */; };
-		F6173AF517BD9F46009FF930 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6173AF417BD9F46009FF930 /* Default@2x.png */; };
-		F6173AF717BD9F46009FF930 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6173AF617BD9F46009FF930 /* Default-568h@2x.png */; };
 		F6173B0517BD9F46009FF930 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6173B0417BD9F46009FF930 /* SenTestingKit.framework */; };
 		F6173B0617BD9F46009FF930 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6173AE017BD9F46009FF930 /* UIKit.framework */; };
 		F6173B0717BD9F46009FF930 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6173AE217BD9F46009FF930 /* Foundation.framework */; };
@@ -34,6 +31,9 @@
 		F6C34C5B17C1AFA40035B84B /* DGPlace.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C34C5A17C1AFA40035B84B /* DGPlace.m */; };
 		F6C34C5E17C1C3690035B84B /* default_place_photo.png in Resources */ = {isa = PBXBuildFile; fileRef = F6C34C5D17C1C3690035B84B /* default_place_photo.png */; };
 		F6C34C6217C1D5C50035B84B /* NSIndexPath+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C34C6117C1D5C50035B84B /* NSIndexPath+Additions.m */; };
+		F6C34C6617C1DE840035B84B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6C34C6317C1DE840035B84B /* Default-568h@2x.png */; };
+		F6C34C6717C1DE840035B84B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = F6C34C6417C1DE840035B84B /* Default.png */; };
+		F6C34C6817C1DE840035B84B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6C34C6517C1DE840035B84B /* Default@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,9 +59,6 @@
 		F6173AEE17BD9F46009FF930 /* DGNearbyPlaces-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DGNearbyPlaces-Prefix.pch"; sourceTree = "<group>"; };
 		F6173AEF17BD9F46009FF930 /* DGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DGAppDelegate.h; sourceTree = "<group>"; };
 		F6173AF017BD9F46009FF930 /* DGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DGAppDelegate.m; sourceTree = "<group>"; };
-		F6173AF217BD9F46009FF930 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		F6173AF417BD9F46009FF930 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		F6173AF617BD9F46009FF930 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		F6173B0317BD9F46009FF930 /* DGNearbyPlacesTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DGNearbyPlacesTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6173B0417BD9F46009FF930 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		F6173B0C17BD9F46009FF930 /* DGNearbyPlacesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DGNearbyPlacesTests-Info.plist"; sourceTree = "<group>"; };
@@ -81,6 +78,9 @@
 		F6C34C5D17C1C3690035B84B /* default_place_photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default_place_photo.png; sourceTree = "<group>"; };
 		F6C34C6017C1D5C50035B84B /* NSIndexPath+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSIndexPath+Additions.h"; sourceTree = "<group>"; };
 		F6C34C6117C1D5C50035B84B /* NSIndexPath+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSIndexPath+Additions.m"; sourceTree = "<group>"; };
+		F6C34C6317C1DE840035B84B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		F6C34C6417C1DE840035B84B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		F6C34C6517C1DE840035B84B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,9 +171,6 @@
 				F6173AE917BD9F46009FF930 /* InfoPlist.strings */,
 				F6173AEC17BD9F46009FF930 /* main.m */,
 				F6173AEE17BD9F46009FF930 /* DGNearbyPlaces-Prefix.pch */,
-				F6173AF217BD9F46009FF930 /* Default.png */,
-				F6173AF417BD9F46009FF930 /* Default@2x.png */,
-				F6173AF617BD9F46009FF930 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -228,6 +225,9 @@
 		F6C34C5C17C1C3690035B84B /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				F6C34C6317C1DE840035B84B /* Default-568h@2x.png */,
+				F6C34C6417C1DE840035B84B /* Default.png */,
+				F6C34C6517C1DE840035B84B /* Default@2x.png */,
 				F6C34C5D17C1C3690035B84B /* default_place_photo.png */,
 			);
 			path = Assets;
@@ -317,11 +317,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6173AEB17BD9F46009FF930 /* InfoPlist.strings in Resources */,
-				F6173AF317BD9F46009FF930 /* Default.png in Resources */,
-				F6173AF517BD9F46009FF930 /* Default@2x.png in Resources */,
-				F6173AF717BD9F46009FF930 /* Default-568h@2x.png in Resources */,
 				F6C34C4C17C1A6E10035B84B /* DGNearbyPlacesListController.xib in Resources */,
 				F6C34C5E17C1C3690035B84B /* default_place_photo.png in Resources */,
+				F6C34C6617C1DE840035B84B /* Default-568h@2x.png in Resources */,
+				F6C34C6717C1DE840035B84B /* Default.png in Resources */,
+				F6C34C6817C1DE840035B84B /* Default@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
