@@ -104,6 +104,10 @@ NSInteger const kPhotoSizeMaxHeight = 100;
             nearByPlace.imageLoaded = YES;
             [cell setNeedsDisplay];
         } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error) {
+            // We can handle this a few different ways based on the requirements. We could have an image for the failed image download state, or set it
+            // so that this will only show one alert for the first time a photo connection error is encountered. We definitely don't want to spam the user
+            // with errors for each failed photo download though. For now, let's consider the lack of any image other than the placeholder loading as a sign
+            // that the photo couldn't be downloaded.
         }];
     }
     
