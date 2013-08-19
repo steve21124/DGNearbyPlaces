@@ -185,6 +185,7 @@ NSInteger const kPhotoSizeMaxHeight = 100;
 }
 
 #pragma mark - UITextFieldDelegate methods
+
 - (void)textFieldDidEndEditing:(UITextField *)textField
 {
     [textField resignFirstResponder];
@@ -198,6 +199,7 @@ NSInteger const kPhotoSizeMaxHeight = 100;
 }
 
 #pragma mark - IBAction methods
+
 - (IBAction)searchNearby:(id)sender
 {
     [self.radiusTextField resignFirstResponder];
