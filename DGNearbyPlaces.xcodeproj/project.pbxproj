@@ -30,9 +30,9 @@
 		F6B6AF1B17BDB12D00389056 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6B6AF1A17BDB12D00389056 /* MobileCoreServices.framework */; };
 		F6C34C4B17C1A6E10035B84B /* DGNearbyPlacesListController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C34C4917C1A6E10035B84B /* DGNearbyPlacesListController.m */; };
 		F6C34C4C17C1A6E10035B84B /* DGNearbyPlacesListController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6C34C4A17C1A6E10035B84B /* DGNearbyPlacesListController.xib */; };
-		F6C34C4F17C1A7060035B84B /* default_place_photo.png in Resources */ = {isa = PBXBuildFile; fileRef = F6C34C4E17C1A7060035B84B /* default_place_photo.png */; };
 		F6C34C5717C1A76D0035B84B /* DGPlacesAPIJSONClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C34C5617C1A76D0035B84B /* DGPlacesAPIJSONClient.m */; };
 		F6C34C5B17C1AFA40035B84B /* DGPlace.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C34C5A17C1AFA40035B84B /* DGPlace.m */; };
+		F6C34C5E17C1C3690035B84B /* default_place_photo.png in Resources */ = {isa = PBXBuildFile; fileRef = F6C34C5D17C1C3690035B84B /* default_place_photo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,11 +73,11 @@
 		F6C34C4817C1A6E10035B84B /* DGNearbyPlacesListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGNearbyPlacesListController.h; sourceTree = "<group>"; };
 		F6C34C4917C1A6E10035B84B /* DGNearbyPlacesListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGNearbyPlacesListController.m; sourceTree = "<group>"; };
 		F6C34C4A17C1A6E10035B84B /* DGNearbyPlacesListController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DGNearbyPlacesListController.xib; sourceTree = "<group>"; };
-		F6C34C4E17C1A7060035B84B /* default_place_photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default_place_photo.png; sourceTree = "<group>"; };
 		F6C34C5517C1A76D0035B84B /* DGPlacesAPIJSONClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGPlacesAPIJSONClient.h; sourceTree = "<group>"; };
 		F6C34C5617C1A76D0035B84B /* DGPlacesAPIJSONClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGPlacesAPIJSONClient.m; sourceTree = "<group>"; };
 		F6C34C5917C1AFA40035B84B /* DGPlace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGPlace.h; sourceTree = "<group>"; };
 		F6C34C5A17C1AFA40035B84B /* DGPlace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGPlace.m; sourceTree = "<group>"; };
+		F6C34C5D17C1C3690035B84B /* default_place_photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default_place_photo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,7 +154,7 @@
 				F6C34C4717C1A6E10035B84B /* ViewControllers */,
 				F6C34C5417C1A76D0035B84B /* Service */,
 				F6C34C5817C1AFA40035B84B /* DataTransferObjects */,
-				F6C34C4D17C1A7060035B84B /* Assets */,
+				F6C34C5C17C1C3690035B84B /* Assets */,
 				F6173AE717BD9F46009FF930 /* Supporting Files */,
 			);
 			path = DGNearbyPlaces;
@@ -203,14 +203,6 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		F6C34C4D17C1A7060035B84B /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-				F6C34C4E17C1A7060035B84B /* default_place_photo.png */,
-			);
-			path = Assets;
-			sourceTree = "<group>";
-		};
 		F6C34C5417C1A76D0035B84B /* Service */ = {
 			isa = PBXGroup;
 			children = (
@@ -227,6 +219,14 @@
 				F6C34C5A17C1AFA40035B84B /* DGPlace.m */,
 			);
 			path = DataTransferObjects;
+			sourceTree = "<group>";
+		};
+		F6C34C5C17C1C3690035B84B /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				F6C34C5D17C1C3690035B84B /* default_place_photo.png */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,7 +308,7 @@
 				F6173AF517BD9F46009FF930 /* Default@2x.png in Resources */,
 				F6173AF717BD9F46009FF930 /* Default-568h@2x.png in Resources */,
 				F6C34C4C17C1A6E10035B84B /* DGNearbyPlacesListController.xib in Resources */,
-				F6C34C4F17C1A7060035B84B /* default_place_photo.png in Resources */,
+				F6C34C5E17C1C3690035B84B /* default_place_photo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
