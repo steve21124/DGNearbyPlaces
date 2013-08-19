@@ -33,6 +33,7 @@
 		F6C34C5717C1A76D0035B84B /* DGPlacesAPIJSONClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C34C5617C1A76D0035B84B /* DGPlacesAPIJSONClient.m */; };
 		F6C34C5B17C1AFA40035B84B /* DGPlace.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C34C5A17C1AFA40035B84B /* DGPlace.m */; };
 		F6C34C5E17C1C3690035B84B /* default_place_photo.png in Resources */ = {isa = PBXBuildFile; fileRef = F6C34C5D17C1C3690035B84B /* default_place_photo.png */; };
+		F6C34C6217C1D5C50035B84B /* NSIndexPath+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C34C6117C1D5C50035B84B /* NSIndexPath+Additions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,8 @@
 		F6C34C5917C1AFA40035B84B /* DGPlace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGPlace.h; sourceTree = "<group>"; };
 		F6C34C5A17C1AFA40035B84B /* DGPlace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGPlace.m; sourceTree = "<group>"; };
 		F6C34C5D17C1C3690035B84B /* default_place_photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default_place_photo.png; sourceTree = "<group>"; };
+		F6C34C6017C1D5C50035B84B /* NSIndexPath+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSIndexPath+Additions.h"; sourceTree = "<group>"; };
+		F6C34C6117C1D5C50035B84B /* NSIndexPath+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSIndexPath+Additions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +154,7 @@
 			children = (
 				F6173AEF17BD9F46009FF930 /* DGAppDelegate.h */,
 				F6173AF017BD9F46009FF930 /* DGAppDelegate.m */,
+				F6C34C5F17C1D5A90035B84B /* Categories */,
 				F6C34C4717C1A6E10035B84B /* ViewControllers */,
 				F6C34C5417C1A76D0035B84B /* Service */,
 				F6C34C5817C1AFA40035B84B /* DataTransferObjects */,
@@ -227,6 +231,15 @@
 				F6C34C5D17C1C3690035B84B /* default_place_photo.png */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		F6C34C5F17C1D5A90035B84B /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				F6C34C6017C1D5C50035B84B /* NSIndexPath+Additions.h */,
+				F6C34C6117C1D5C50035B84B /* NSIndexPath+Additions.m */,
+			);
+			path = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -378,6 +391,7 @@
 				F6C34C4B17C1A6E10035B84B /* DGNearbyPlacesListController.m in Sources */,
 				F6C34C5717C1A76D0035B84B /* DGPlacesAPIJSONClient.m in Sources */,
 				F6C34C5B17C1AFA40035B84B /* DGPlace.m in Sources */,
+				F6C34C6217C1D5C50035B84B /* NSIndexPath+Additions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

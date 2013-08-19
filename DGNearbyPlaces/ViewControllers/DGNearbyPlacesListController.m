@@ -10,6 +10,7 @@
 #import "DGPlacesAPIJSONClient.h"
 #import <AFNetworking.h>
 #import "DGPlace.h"
+#import "NSIndexPath+Additions.h"
 
 #define kEndOfFirstPage 20;
 #define kEndOfSecondPage 40;
@@ -19,6 +20,7 @@ NSString* const kControllerTitle = @"Nearby Places";
 NSInteger const kNumTableViewSections = 1;
 NSInteger const kLastRowOfFirstPage = 19;
 NSInteger const kLastRowOfSecondPage = 39;
+NSInteger const kLastRowOfThirdPage = 59;
 NSInteger const kNumberOfResultsPerPage = 20;
 NSString* const kConnectionErrorTitle = @"Connection Error";
 NSString* const kConnectionErrorFormat = @"There was a problem retrieving places data: Details: %@";
@@ -31,6 +33,9 @@ NSInteger const kPhotoSizeMaxHeight = 100;
 @property (nonatomic, assign) NSInteger searchRadius;
 @property (nonatomic, copy) NSString* nextPageToken;
 @property (nonatomic, assign) BOOL locationFound;
+@property (nonatomic, assign) BOOL firstPageLoaded;
+@property (nonatomic, assign) BOOL secondPageLoaded;
+@property (nonatomic, assign) BOOL thirdPageLoaded;
 
 @end
 
@@ -118,7 +123,7 @@ NSInteger const kPhotoSizeMaxHeight = 100;
 {
     // When reaching the last row of a 'page' & you haven't loaded the results for the next page yet, load next page results
     // Load page 2
-    if (indexPath.row == kLastRowOfFirstPage && [self.nearbyPlaces count] == kNumberOfResultsPerPage)
+    if (indexPath.row == kLastRowOfFirstPage && self.firstPageLoaded && !self.secondPageLoaded)
     {
         //Load the next 20 results
         if (self.nextPageToken)
@@ -126,14 +131,17 @@ NSInteger const kPhotoSizeMaxHeight = 100;
             [[DGPlacesAPIJSONClient sharedClient] requestPlacesNear:self.currentLocation withRadius:self.searchRadius pageToken:self.nextPageToken success:^(NSArray* places, NSString* nextPageToken) {
                 [self.nearbyPlaces addObjectsFromArray:places];
                 self.nextPageToken = nextPageToken;
-                [self.nearbyPlacesTableView reloadData];
+                self.secondPageLoaded = YES;
+                [self.nearbyPlacesTableView beginUpdates];
+                [self.nearbyPlacesTableView insertRowsAtIndexPaths:[NSIndexPath indexPathsForSection:0 fromRow:kLastRowOfFirstPage+1 toRow:kLastRowOfSecondPage] withRowAnimation:UITableViewRowAnimationAutomatic];
+                [self.nearbyPlacesTableView endUpdates];
             } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON) {
                 [self handleError:error];
             }];
         }
     }
     // Load page 3
-    if (indexPath.row == kLastRowOfSecondPage && [self.nearbyPlaces count] == 2*kNumberOfResultsPerPage)
+    if (indexPath.row == kLastRowOfSecondPage && self.secondPageLoaded && !self.thirdPageLoaded)
     {
         //Load the last 20 results
         if (self.nextPageToken)
@@ -141,7 +149,10 @@ NSInteger const kPhotoSizeMaxHeight = 100;
             [[DGPlacesAPIJSONClient sharedClient] requestPlacesNear:self.currentLocation withRadius:self.searchRadius pageToken:self.nextPageToken success:^(NSArray* places, NSString* nextPageToken) {
                 [self.nearbyPlaces addObjectsFromArray:places];
                 self.nextPageToken = nextPageToken;
-                [self.nearbyPlacesTableView reloadData];
+                self.thirdPageLoaded = YES;
+                [self.nearbyPlacesTableView beginUpdates];
+                [self.nearbyPlacesTableView insertRowsAtIndexPaths:[NSIndexPath indexPathsForSection:0 fromRow:kLastRowOfSecondPage+1 toRow:kLastRowOfThirdPage] withRowAnimation:UITableViewRowAnimationAutomatic];
+                [self.nearbyPlacesTableView endUpdates];
             } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON) {
                 [self handleError:error];
             }];
@@ -161,6 +172,7 @@ NSInteger const kPhotoSizeMaxHeight = 100;
         [[DGPlacesAPIJSONClient sharedClient] requestPlacesNear:self.currentLocation withRadius:self.searchRadius pageToken:nil success:^(NSArray* places, NSString* nextPageToken) {
             self.nearbyPlaces = [NSMutableArray arrayWithArray:places];
             self.nextPageToken = nextPageToken;
+            self.firstPageLoaded = YES;
             [self.nearbyPlacesTableView reloadData];
         } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON) {
             [self handleError:error];
@@ -193,12 +205,16 @@ NSInteger const kPhotoSizeMaxHeight = 100;
 {
     [self.radiusTextField resignFirstResponder];
     
+    self.firstPageLoaded = NO;
+    self.secondPageLoaded = NO;
+    self.thirdPageLoaded = NO;
     self.nearbyPlaces = nil;
     [self.nearbyPlacesTableView reloadData];
     
     [[DGPlacesAPIJSONClient sharedClient] requestPlacesNear:self.currentLocation withRadius:self.searchRadius pageToken:nil success:^(NSArray* places, NSString* nextPageToken) {
         self.nearbyPlaces = [NSMutableArray arrayWithArray:places];
         self.nextPageToken = nextPageToken;
+        self.firstPageLoaded = YES;
         [self.nearbyPlacesTableView reloadData];
     } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON) {
         [self handleError:error];
