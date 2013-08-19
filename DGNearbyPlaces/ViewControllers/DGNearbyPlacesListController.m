@@ -192,10 +192,6 @@ NSInteger const kPhotoSizeMaxHeight = 100;
     self.nearbyPlaces = nil;
     [self.nearbyPlacesTableView reloadData];
     
-    // Scroll to top to ensure there's no interference with 2nd & 3rd page loading behavior
-    //    [self.nearbyPlacesTableView reloadData];
-    //    [self.nearbyPlacesTableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] atScrollPosition:UITableViewScrollPositionTop animated:YES];
-    
     [[DGPlacesAPIJSONClient sharedClient] requestPlacesNear:self.currentLocation withRadius:self.searchRadius pageToken:nil success:^(NSArray* places, NSString* nextPageToken) {
         self.nearbyPlaces = [NSMutableArray arrayWithArray:places];
         self.nextPageToken = nextPageToken;
