@@ -12,9 +12,6 @@
 #import "DGPlace.h"
 #import "NSIndexPath+Additions.h"
 
-#define kEndOfFirstPage 20;
-#define kEndOfSecondPage 40;
-
 NSInteger const kDefaultSearchRadius = 500;
 NSString* const kControllerTitle = @"Nearby Places";
 NSInteger const kNumTableViewSections = 1;
