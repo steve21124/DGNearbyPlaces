@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		D16DB31AC4044015B745DF0A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09D1A14D010740EB81FB40AE /* libPods.a */; };
+		F610DB6F17C01A0100C9E8DF /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6B6AF1A17BDB12D00389056 /* MobileCoreServices.framework */; };
+		F610DB7017C01A0C00C9E8DF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6B6AF1817BDB10600389056 /* SystemConfiguration.framework */; };
+		F610DB7117C01A0F00C9E8DF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6B6AF0B17BDA03100389056 /* CoreLocation.framework */; };
 		F6173AE117BD9F46009FF930 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6173AE017BD9F46009FF930 /* UIKit.framework */; };
 		F6173AE317BD9F46009FF930 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6173AE217BD9F46009FF930 /* Foundation.framework */; };
 		F6173AE517BD9F46009FF930 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6173AE417BD9F46009FF930 /* CoreGraphics.framework */; };
@@ -99,6 +102,9 @@
 				F6173B0517BD9F46009FF930 /* SenTestingKit.framework in Frameworks */,
 				F6173B0617BD9F46009FF930 /* UIKit.framework in Frameworks */,
 				F6173B0717BD9F46009FF930 /* Foundation.framework in Frameworks */,
+				F610DB6F17C01A0100C9E8DF /* MobileCoreServices.framework in Frameworks */,
+				F610DB7017C01A0C00C9E8DF /* SystemConfiguration.framework in Frameworks */,
+				F610DB7117C01A0F00C9E8DF /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,9 +114,6 @@
 		F6173AD417BD9F46009FF930 = {
 			isa = PBXGroup;
 			children = (
-				F6B6AF1A17BDB12D00389056 /* MobileCoreServices.framework */,
-				F6B6AF1817BDB10600389056 /* SystemConfiguration.framework */,
-				F6B6AF0B17BDA03100389056 /* CoreLocation.framework */,
 				F6173AE617BD9F46009FF930 /* DGNearbyPlaces */,
 				F6173B0A17BD9F46009FF930 /* DGNearbyPlacesTests */,
 				F6173ADF17BD9F46009FF930 /* Frameworks */,
@@ -131,6 +134,9 @@
 		F6173ADF17BD9F46009FF930 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F6B6AF1A17BDB12D00389056 /* MobileCoreServices.framework */,
+				F6B6AF1817BDB10600389056 /* SystemConfiguration.framework */,
+				F6B6AF0B17BDA03100389056 /* CoreLocation.framework */,
 				F6173AE017BD9F46009FF930 /* UIKit.framework */,
 				F6173AE217BD9F46009FF930 /* Foundation.framework */,
 				F6173AE417BD9F46009FF930 /* CoreGraphics.framework */,
@@ -473,6 +479,7 @@
 		};
 		F6173B1917BD9F46009FF930 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA92D64400F8451983E6254B /* Pods.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DGNearbyPlaces.app/DGNearbyPlaces";
 				FRAMEWORK_SEARCH_PATHS = (

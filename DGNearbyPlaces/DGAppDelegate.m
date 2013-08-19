@@ -18,8 +18,7 @@
     [AFNetworkActivityIndicatorManager sharedManager].enabled = YES;
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.nearbyPlacesController = [[DGNearbyPlacesListController alloc] initWithNibName:@"DGNearbyPlacesListController" bundle:nil];
+    self.nearbyPlacesController = [[DGNearbyPlacesListController alloc] initWithNibName:nil bundle:nil];
     self.navController = [[UINavigationController alloc] initWithRootViewController:self.nearbyPlacesController];
     self.window.rootViewController = self.navController;
     [self.window makeKeyAndVisible];
